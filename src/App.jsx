@@ -17,7 +17,7 @@ const translations = {
     available: "Disponible pour projets & opportunités",
     title: "Je transforme les idées en solutions numériques & visuelles.",
     intro:
-      "Passionné par le développement logiciel, la conception web et la création de contenus vidéo percutants. Basé à Djibouti, j'allie compétences techniques et sensibilité créative.",
+      "Passionné par le développement logiciel, la création web et la création de contenus vidéo percutants. Basé à Djibouti, j'allie compétences techniques et sensibilité créative.",
     viewProjects: "Explorer mes projets",
     downloadCV: "Télécharger mon CV",
     aboutTitle: "À propos de moi",
@@ -58,7 +58,7 @@ const translations = {
     experienceTitle: "Parcours & Expérience",
     experienceDescription:
       "Une démarche continue d'apprentissage, de projets en équipe et de défis techniques.",
-    experienceStudent: "Étudiant L3 Informatique & Freelance Média",
+    experienceStudent: "Étudiant L3 Informatique & Créateur Média",
     experiencePeriod: "Présent",
     certificationsTitle: "Certifications & Formation continue",
     certificationsDescription:
@@ -172,7 +172,7 @@ const projects = [
   },
   {
     number: "02",
-    name: "Zeb — Gestion de Salles de Réunion",
+    name: "Meeting Room Management",
     category: "Projet Académique",
     description:
       "Système de gestion et de réservation de salles développé dans le cadre de la Licence 3 d'informatique.",
@@ -310,14 +310,14 @@ function App() {
               <span style={{ fontSize: '0.85rem', color: '#6ee7b7', fontWeight: '600' }}>{t.available}</span>
             </div>
 
-            <h1 style={{ fontSize: 'clamp(2.4rem, 5vw, 4rem)', lineHeight: '1.15', fontWeight: '800', marginBottom: '15px' }}>
-              Hello, je suis <br />
+            <h1 style={{ fontSize: 'clamp(2.5rem, 5vw, 4.5rem)', lineHeight: '1.15', fontWeight: '800', marginBottom: '15px' }}>
+              Hello, I'm <br />
               <span style={{
                 background: 'linear-gradient(135deg, #60a5fa, #a855f7, #ec4899)',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent'
               }}>
-                Mahamoud Yonis Ahmed
+                KingMaZO.
               </span>
             </h1>
 
@@ -359,7 +359,7 @@ function App() {
 
           </div>
 
-          {/* CARTE DE PROFIL PRO AVEC PHOTO ET EFFETS GLASSMORPHISM */}
+          {/* CARTE DE PROFIL AVEC PHOTO ET EFFETS ELEGANTS */}
           <div className="hero-image-area" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
             
             <div style={{
@@ -380,7 +380,7 @@ function App() {
                 left: '-10px',
                 right: '-10px',
                 bottom: '-10px',
-                background: 'linear-gradient(135deg, rgba(59, 130, 246, 0.3), rgba(168, 85, 247, 0.3))',
+                background: 'linear-gradient(135deg, rgba(59, 130, 246, 0.35), rgba(168, 85, 247, 0.35))',
                 borderRadius: '28px',
                 filter: 'blur(20px)',
                 zIndex: -1
@@ -389,7 +389,7 @@ function App() {
               {/* Photo de profil */}
               <img
                 src="/image.jpg"
-                alt="Mahamoud Yonis Ahmed (KingMaZO)"
+                alt="KingMaZO portrait"
                 className="profile-image"
                 style={{
                   width: '100%',
@@ -400,7 +400,7 @@ function App() {
                 }}
               />
 
-              {/* Carte d'information intégrée sous la photo */}
+              {/* Légende de la photo */}
               <div style={{
                 marginTop: '15px',
                 padding: '15px',
@@ -409,25 +409,12 @@ function App() {
                 border: '1px solid rgba(255, 255, 255, 0.08)',
                 textAlign: 'center'
               }}>
-                <h3 style={{ fontSize: '1.1rem', fontWeight: '700', color: '#fff', margin: 0 }}>
-                  Mahamoud Yonis Ahmed
+                <h3 style={{ fontSize: '1.15rem', fontWeight: '700', color: '#fff', margin: 0 }}>
+                  KingMaZO
                 </h3>
-                <p style={{ fontSize: '0.82rem', color: '#a78bfa', margin: '4px 0 0 0', fontWeight: '500' }}>
-                  KingMaZO • L3 Informatique
+                <p style={{ fontSize: '0.85rem', color: '#a5b4fc', margin: '4px 0 0 0', fontWeight: '500' }}>
+                  Software Engineering & Creative Media
                 </p>
-                <div style={{
-                  display: 'flex',
-                  justify: 'space-around',
-                  marginTop: '12px',
-                  paddingTop: '10px',
-                  borderTop: '1px solid rgba(255,255,255,0.08)',
-                  fontSize: '0.78rem',
-                  color: '#9ca3af'
-                }}>
-                  <span>💻 Dev Web</span>
-                  <span>🎬 CapCut</span>
-                  <span>🎨 Canva</span>
-                </div>
               </div>
             </div>
 
@@ -446,12 +433,12 @@ function App() {
                 <span>Licence 3 Informatique</span>
               </div>
               <div>
-                <strong>3+ Ans</strong>
-                <span>Expérience CapCut & Canva</span>
+                <strong>PRO</strong>
+                <span>Canva & CapCut Creator</span>
               </div>
               <div>
                 <strong>100%</strong>
-                <span>Passion & Rigueur</span>
+                <span>Passion & Precision</span>
               </div>
             </div>
           </div>
@@ -464,7 +451,7 @@ function App() {
             <div className="timeline-card">
               <div className="timeline-dot"></div>
               <div>
-                <span className="card-date">EN COURS D'OBTENTION</span>
+                <span className="card-date">CURRENTLY STUDYING</span>
                 <h3>{t.degree}</h3>
                 <h4>{t.university}</h4>
                 <p>{t.educationDescription}</p>
@@ -490,7 +477,7 @@ function App() {
         {/* SERVICES */}
         <section id="services" className="section section-soft">
           <div className="container">
-            <SectionTitle label="04 — CE QUE JE PROPOSE" title={t.servicesTitle} description={t.servicesDescription} />
+            <SectionTitle label="04 — WHAT I OFFER" title={t.servicesTitle} description={t.servicesDescription} />
             <div className="services-grid">
               <article className="service-card">
                 <span className="service-icon">&lt;/&gt;</span>
@@ -523,7 +510,7 @@ function App() {
 
         {/* PROJECTS */}
         <section id="projects" className="section container">
-          <SectionTitle label="05 — RÉALISATIONS" title={t.projectsTitle} description={t.projectsDescription} />
+          <SectionTitle label="05 — SELECTED WORK" title={t.projectsTitle} description={t.projectsDescription} />
           <div className="projects-grid">
             {projects.map((project) => (
               <article className="project-card" key={project.number}>
@@ -555,7 +542,7 @@ function App() {
         {/* EXPERIENCE */}
         <section id="experience" className="section section-soft">
           <div className="container">
-            <SectionTitle label="07 — MON PARCOURS" title={t.experienceTitle} description={t.experienceDescription} />
+            <SectionTitle label="07 — MY JOURNEY" title={t.experienceTitle} description={t.experienceDescription} />
             <div className="experience-card">
               <span className="card-date">{t.experiencePeriod}</span>
               <h3>{t.experienceStudent}</h3>
@@ -567,13 +554,13 @@ function App() {
 
         {/* CERTIFICATIONS */}
         <section id="certifications" className="section container">
-          <SectionTitle label="08 — FORMATION CONTINUE" title={t.certificationsTitle} description={t.certificationsDescription} />
+          <SectionTitle label="08 — PROFESSIONAL DEVELOPMENT" title={t.certificationsTitle} description={t.certificationsDescription} />
           <div className="certification-card">
             <span className="certification-icon">✦</span>
             <div>
-              <h3>Apprentissage en Continu & Autodidaxie</h3>
-              <p>Développement de solutions logicielles, montage vidéo pro et design graphique.</p>
-              <span className="skill-level">Parcours actif</span>
+              <h3>Continuous Learning</h3>
+              <p>Software engineering, video production, graphic design.</p>
+              <span className="skill-level">Learning journey</span>
             </div>
           </div>
         </section>
@@ -583,19 +570,19 @@ function App() {
           <div className="container contact-container">
             <div className="contact-details">
               <div className="contact-detail">
-                <strong>NOM COMPLET</strong><br />
-                <span>Mahamoud Yonis Ahmed (KingMaZO)</span>
+                <strong>NAME</strong><br />
+                <span>KingMaZO</span>
               </div>
               <div className="contact-detail">
-                <strong>LOCALISATION</strong><br />
+                <strong>LOCATION</strong><br />
                 <span>Djibouti</span>
               </div>
               <div className="contact-detail">
-                <strong>E-MAIL</strong><br />
+                <strong>EMAIL</strong><br />
                 <a href="mailto:mahamoudya3@gmail.com">mahamoudya3@gmail.com</a>
               </div>
               <div className="contact-detail">
-                <strong>WHATSAPP DIRECT</strong><br />
+                <strong>WHATSAPP</strong><br />
                 <a
                   href="https://wa.me/25377520760"
                   className="whatsapp-icon"
@@ -627,7 +614,7 @@ function App() {
 
       </main>
 
-      {/* FOOTER AVEC STATISTIQUES */}
+      {/* FOOTER */}
       <footer className="footer">
         <div className="container footer-content" style={{ display: 'flex', flexDirection: 'column', gap: '15px', alignItems: 'center', textAlign: 'center' }}>
           <a href="#home" className="logo">
@@ -649,8 +636,8 @@ function App() {
             <span>{visitors} {t.visitors}</span>
           </div>
 
-          <p>© {new Date().getFullYear()} Mahamoud Yonis Ahmed (KingMaZO). {t.footer}</p>
-          <a href="#home" className="back-top">Retour en haut ↑</a>
+          <p>© {new Date().getFullYear()} KingMaZO. {t.footer}</p>
+          <a href="#home" className="back-top">Back to top ↑</a>
         </div>
       </footer>
 
