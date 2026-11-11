@@ -1,5 +1,6 @@
 import { useState } from "react";
 import VideoGrid from './VideoGrid';
+
 const translations = {
   FR: {
     home: "Accueil",
@@ -192,14 +193,6 @@ function SectionTitle({ label, title, description }) {
 }
 
 function App() {
-return (
-    <div className="bg-gray-950 min-h-screen text-white">
-      {/* Tes autres sections (Hero, À propos, etc.) */}
-      
-      {/* Intégration de la grille de vidéos */}
-      <VideoGrid />
-    </div>
-  );
   const [language, setLanguage] = useState("FR");
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -234,7 +227,7 @@ return (
   }
 
   return (
-    <div className="portfolio">
+    <div className="portfolio bg-gray-950 min-h-screen text-white">
 
       {/* NAVIGATION */}
       <header className="site-header">
@@ -491,6 +484,9 @@ return (
           </div>
 
         </section>
+
+        {/* INTÉGRATION DE LA GRILLE DE VIDÉOS */}
+        <VideoGrid />
 
         {/* EXPERIENCE */}
         <section id="experience" className="section section-soft">
