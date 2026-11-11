@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import VideoGrid from './VideoGrid';
 const translations = {
   FR: {
     home: "Accueil",
@@ -192,6 +192,14 @@ function SectionTitle({ label, title, description }) {
 }
 
 function App() {
+return (
+    <div className="bg-gray-950 min-h-screen text-white">
+      {/* Tes autres sections (Hero, À propos, etc.) */}
+      
+      {/* Intégration de la grille de vidéos */}
+      <VideoGrid />
+    </div>
+  );
   const [language, setLanguage] = useState("FR");
   const [menuOpen, setMenuOpen] = useState(false);
 
